@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length</title>
+    <link rel="stylesheet" href="length.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rasa">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Forum">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    <script src="length.js"></script>
+    <div class="navbar">
+        <a href="/length" style="background-color: blue; color: orange;">
+            <strong>Length</strong></a>
+        <a href="#kilometer">Kilometer</a>
+        <a href="#meter">Meter</a>
+        <a href="#centimeter">Centimeters</a>
+        <a href="#millimeter">Millimeters</a>
+    </div>
+    <div id="kilometer">
+        <h1 class="headers">
+            Kilometers
+        </h1>
+        <form action="">
+            <input type="number" class="num" id="kmNum" min="0" placeholder="Enter Kilometers here" step=".01"><br>
+            <button class="submit" id="kmSub">Submit <i class="fa fa-spinner fa-spin"></i></button>
+        </form>
+        <div class="conv" id="kmConv">
+            <h6>
+                <fieldset id="km">
+                    <legend>Kilometer conversion <i id='kmUp' class="fa fa-angle-double-up"></i></legend>
+                    <div id="kmEmpty">
+
+                    </div>
+                </fieldset>
+            </h6>
+        </div>
+    </div>
+
+</body>
+
+</html>
